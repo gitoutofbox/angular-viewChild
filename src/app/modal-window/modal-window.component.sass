@@ -1,0 +1,40 @@
+a 
+    cursor: pointer
+.modal-window
+    display: flex
+    // justify-content: center   
+    .overlay 
+        background: #fff
+        opacity: 0.5
+        z-index: 99
+        position: fixed
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+
+    .card
+        border: 1px solid #000
+        margin: 0 auto
+        z-index: 100
+        color: #000
+        width: 300px
+        // position: absolute
+        // left: calc(50% - 250px)
+        top: 20px
+        .float-right
+            right: 5px
+            top: 0
+            position: absolute
+        .modal-header
+            background: #f3eeee
+            padding: 5px
+            position: relative
+        .modal-body
+            min-height: 100px
+        ::ng-deep
+            .modal-footer 
+                background: #ddd
+                padding: 5px
+                button:not(:last-child)
+                    margin-right: .25rem

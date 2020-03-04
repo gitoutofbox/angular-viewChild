@@ -1,0 +1,14 @@
+<div class="modal-window">
+  <div class="card">
+    <div class="modal-header">
+      <span class="header-text"><ng-content select="[modal-header]"></ng-content></span>
+      <a (click)="minimize()" class="float-right" *ngIf="!this.isMinimized">&#8722;</a>
+      <a (click)="minimize()" class="float-right" *ngIf="this.isMinimized">&#43;</a>      
+    </div>
+    <div class="modal-body" *ngIf="!isMinimized">
+      <ng-content select="[modal-body]"></ng-content>
+      <div><app-test></app-test></div>
+    </div>
+  </div>
+  
+</div>
